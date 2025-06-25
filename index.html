@@ -5,26 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Galaxy Cabuloso</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* remove scroll lateral */
+      width: 100%;
       font-family: 'Arial', sans-serif;
       color: #fff;
-      background: url(SiteBG_edited.jpg) no-repeat center       center fixed;
+      background: url(SiteBG_edited.jpg) no-repeat center center fixed;
       background-size: cover;
     }
+
     .container {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 40px 20px;
       text-align: center;
       min-height: 100vh;
+      box-sizing: border-box;
     }
+
     .logo {
-      max-width: 500px;
-      margin-top: 40px; /* adiciona espaço acima */
+      max-width: 90%;
+      width: 100%;
+      margin-top: 80px;
       margin-bottom: 40px;
-  
-  margin-bottom: 40px;
     }
+
     .logo-glow {
       filter: drop-shadow(0 0 12px #ffffff) drop-shadow(0 0 18px #ffffff);
     }
@@ -33,11 +39,14 @@
       font-size: 3em;
       margin: 0.5em 0;
     }
+
     .description {
       font-size: 1.3em;
       max-width: 800px;
       margin: 0 auto 40px;
+      padding: 0 10px;
     }
+
     .play-button {
       display: inline-block;
       background-color: #34a853;
@@ -48,19 +57,42 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
+
     .play-button:hover {
       background-color: #2c8c45;
     }
+
     .trailer {
       margin-top: 60px;
     }
+
     iframe {
-      width: 90%;
+      width: 100%;
       max-width: 800px;
       height: 450px;
       border: none;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+
+      .play-button {
+        padding: 12px 20px;
+        font-size: 1em;
+      }
+
+      iframe {
+        height: 240px;
+      }
     }
   </style>
 </head>
