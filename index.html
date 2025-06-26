@@ -8,7 +8,7 @@
     html, body {
       margin: 0;
       padding: 0;
-      overflow-x: hidden; /* remove scroll lateral */
+      overflow-x: hidden;
       width: 100%;
       font-family: 'Arial', sans-serif;
       color: #fff;
@@ -24,10 +24,16 @@
       box-sizing: border-box;
     }
 
+    .espaco-topo {
+      width: 85px;
+      height: 70px;
+      margin: 0 auto 20px;
+    }
+
     .logo {
       max-width: 90%;
       width: 70%;
-      margin-top: 80px;
+      margin-top: 0;
       margin-bottom: 40px;
     }
 
@@ -75,7 +81,6 @@
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
     }
 
-    /* Responsividade */
     @media (max-width: 600px) {
       h1 {
         font-size: 2em;
@@ -98,6 +103,8 @@
 </head>
 <body>
   <div class="container">
+    <div class="espaco-topo"></div>
+
     <img src="logoGC.png" alt="Logo do Galaxy Cabuloso" class="logo logo-glow" />
 
     <h1>The Deep Hole</h1>
